@@ -1,0 +1,29 @@
+a=input()
+k=int(input())
+b=len(a)
+l1=[]
+l2=[]
+l3=[]
+l4=[]
+for i in range (0,b):
+    for j in range(i,b+1):
+
+        l1.append(a[i:j])
+#print(l1)
+        
+        
+for m in l1:
+    c=set(m)
+    if (len(c)==k):
+        l3.append(m)
+        if len(m)>k:
+            l2.append(m)
+            
+for n in l2:
+    for j in n:
+        h=len(n)
+    l4.append(h)
+    c=max(l4)
+    if len(l2)==c:
+        print(n)
+        
